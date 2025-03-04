@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Example</title>
+    <style>
+        /* Different Units of Measurement */
+        body {
+            font-size: 18px;
+            padding: 2rem;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 70vw;
+            margin: auto;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid black;
+        }
+
+        /* Pseudo-classes */
+        .button {
+            display: inline-block;
+            padding: 1em 2em;
+            font-size: 1.2em;
+            background-color: crimson;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+        }
+
+        .button:active {
+            background-color: darkred;
+        }
+
+        /* Pseudo-elements */
+        h1::first-letter {
+            font-size: 3em;
+            color: blue;
+        }
+
+        p::selection {
+            background: yellow;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .container {
+                width: 90vw;
+            }
+            body {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Web Design Example</h1>
+        <img src="https://via.placeholder.com/600x300" alt="Responsive Example Image">
+        <p>This example showcases different measurement units, pseudo-classes, pseudo-elements, and media queries for responsive design.</p>
+        <a href="#" class="button">Explore More</a>
+    </div>
+</body>
+</html>

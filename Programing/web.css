@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Float Layout */
+.float-box {
+    width: 45%;
+    float: left;
+    margin: 10px;
+    padding: 20px;
+    background: lightblue;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Positioning */
+.position-box {
+    width: 200px;
+    height: 100px;
+    background: lightcoral;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+}
+
+/* Columns Layout */
+.columns {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+/* Flexbox Layout */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: lightgreen;
+    padding: 20px;
+}
+
+.flex-item {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 30%;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background: lightgray;
+    padding: 20px;
+}
+
+.grid-item {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Showcase</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            color: white;
+            border-radius: 10px;
+            transition: transform 0.5s ease-in-out, background-color 0.5s;
+        }
+
+        .box:hover {
+            transform: scale(1.2) rotate(15deg);
+            background-color: #2ecc71;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            color: white;
+            border-radius: 10px;
+            animation: bounce 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Hover</div>
+    <div class="animated-box">Bounce</div>
+</body>
+</html>

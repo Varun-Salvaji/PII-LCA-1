@@ -1,0 +1,88 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        section {
+            padding: 60px 20px;
+        }
+        .content {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .services-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .service-item {
+            background: rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 300px;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .service-item:hover {
+            transform: scale(1.08);
+            background: rgba(255, 255, 255, 0.4);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background: #ffcc00;
+            color: black;
+            padding: 12px 25px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #ff9900;
+        }
